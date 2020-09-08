@@ -1,0 +1,473 @@
+<!DOCTYPE HTML>
+<html manifest="cache.manifest" lang="en">
+
+<head>
+    <title> Project BETA (Release Version) </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script>
+        function DLProgress(e) {
+            Percent = (Math.round(e.loaded / e.total * 100));
+            window.msgs.innerHTML = "&laquo;&nbsp; Installing Offline Cache: " + Percent + "% &nbsp;&raquo;";
+        }
+
+        function DisplayCacheProgress() {
+            setTimeout(function() {
+                window.msgs.innerHTML = "&laquo;&nbsp; Offline Cache Installed Successfully &nbsp;&raquo;";
+            }, 1000);
+            setTimeout(function() {
+                window.msgs.innerHTML = "&laquo;&nbsp; Please Close And Re-Open Your Browser &nbsp;&raquo;";
+            }, 3000);
+        }
+        window.applicationCache.addEventListener("progress", DLProgress, false);
+        window.applicationCache.oncached = function(e) {
+            DisplayCacheProgress();
+        };
+        window.applicationCache.onupdateready = function(e) {
+            DisplayCacheProgress();
+        };
+    </script>
+    <script src="exp_common.js"></script>
+    <script src="exp_jailbreak.js"></script>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <br><br><br>
+
+        <!-- Main -->
+        <section id="main">
+
+            <!-- Items -->
+            <div class="items">
+
+                <div class="item intro span-2">
+                    <h1> Project BETA </h1>
+                    <p> PlayStation 4 Exploit Host Menu </p>
+                </div>
+
+                <article class="item thumb span-1">
+                    <h2> Jailbreak (JB) </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_exploit(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> Homebrew Enabler (HEN) </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_HEN(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> JB + HEN </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_exploit_HEN(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> MIRA </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_mira(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> JB + MIRA </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_exploit_mira(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> MIRA (Unofficial) </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_mira_unofficial(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> JB + MIRA (Unofficial) </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_exploit_miraUnoff(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> BIN Loader </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_binloader(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> EAP Dumper </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_eapkey(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> FTP Server </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_ftp(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> Linux </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_linux(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> RIF Renamer </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_rifrenamer(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> WebRTE </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_webrte(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+
+            </div>
+
+            <!-- Items -->
+            <div class="items">
+
+                <article class="item thumb span-1">
+                    <h2> App2USB </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_app2usb(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> DB Backup </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_dbBackup(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> DB Restore </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_dbRestore(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> Disable Updates </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_updatesdisable(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> Dumper </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_dumper(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> Enable Updates </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_updatesenable(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> Fan Threshold </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_fanthresh(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> History Blocker </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_historyblock(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> Kernel Dumper </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_kerneldump(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> PS4 Debug </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_ps4debug(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> ToDEV </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_todev(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> ToDEX </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_todex(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+                <article class="item thumb span-1">
+                    <h2> ToKratos </h2>
+                    <a href="images/02.jpg" class="image" onclick="load_tokratos(); return false"><img src="images/01.jpg" alt=""></a>
+                </article>
+
+                <div class="item intro span-2">
+                    <h1> Project BETA </h1>
+                    <p> PlayStation 4 Exploit Host Menu </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div>
+            <select id="tempC"></select>
+        </div>
+
+        <h1 id='msgs'>&laquo;&nbsp; PlayStation 4 Exploit Host Menu for 6.72 FW &nbsp;&raquo;</h1>
+
+        <!-- Footer -->
+        <section id="footer">
+            <section>
+                <p> Welcome&nbsp;to&nbsp;<strong> Project&nbsp;BETA </strong>&nbsp;the&nbsp;PlayStation&nbsp;4&nbsp;Exploit&nbsp;Host&nbsp;Menu </p>
+            </section>
+            <section>
+                <ul class="copyright">
+                    <li> &copy; Project BETA </li>
+                    <li> &nbsp;Created by:&nbsp; <a href="https://github.com/xforce505"> xforce505 </a></li>
+                </ul>
+            </section>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        for (var i = 40; i <= 79; i++) {
+            var select = document.getElementById("tempC");
+            var option = document.createElement("OPTION");
+            select.options.add(option);
+            option.text = i;
+            option.value = i;
+        }
+        tempC.value = 60;
+    </script>
+    <script>
+        function load_exploit() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading JB ....</h2>";
+            setTimeout(jailbreak, 500);
+        }
+
+        function load_exploit_mira() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading JB + Mira ....</h2>";
+            LoadedMSG = "JB + Mira Loaded ✔";
+            ExploitMira = "yes";
+            MiraSRC = "pl_mira.js";
+            setTimeout(jailbreak, 500);
+        }
+
+        function load_exploit_miraUnoff() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading JB + Mira (Unofficial) ....</h2>";
+            LoadedMSG = "JB + Mira Loaded ✔";
+            ExploitMira = "yes";
+            MiraSRC = "pl_mira_unofficial.js";
+            setTimeout(jailbreak, 500);
+        }
+
+        function load_exploit_HEN() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading JB + HEN ....</h2>";
+            LoadedMSG = "JB + HEN Loaded ✔";
+            ExploitMira = "HEN";
+            MiraSRC = "pl_HEN.js";
+            setTimeout(jailbreak, 500);
+        }
+
+        function load_binloader() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading Bin Loader ....</h2>";
+            LoadedMSG = "Send Payload To Port 9021";
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_HEN() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading HEN ....</h2>";
+            LoadedMSG = "HEN Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_HEN.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_mira() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading Mira ....</h2>";
+            LoadedMSG = "Mira Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_mira.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_mira_unofficial() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading Mira ....</h2>";
+            LoadedMSG = "Mira Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_mira_unofficial.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_ftp() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading FTP ....</h2>";
+            LoadedMSG = "FTP Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_ftp.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_dumper() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading Dumper ....</h2>";
+            LoadedMSG = "Dumper Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_dumper.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_linux() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading Linux ....</h2>";
+            LoadedMSG = "Linux Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_linux.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_app2usb() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading AppToUSB ....</h2>";
+            LoadedMSG = "AppToUSB Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_app2usb.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_kerneldump() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading Kernel Dumper ....</h2>";
+            LoadedMSG = "Kernel Dumper Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_kernelDumper.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_webrte() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading WebRTE ....</h2>";
+            LoadedMSG = "WebRTE Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_WebRTE.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_ps4debug() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading PS4Debug ....</h2>";
+            LoadedMSG = "PS4Debug Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_ps4debug.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_todev() {
+            msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading ToDEV ....</h1>";
+            LoadedMSG = "ToDEV Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_ToDEV.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_tokratos() {
+            msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading ToKratos ....</h1>";
+            LoadedMSG = "ToKratos Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_ToKratos.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_todex() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading ToDEX ....</h2>";
+            LoadedMSG = "ToDEX Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_ToDEX.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_historyblock() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading History Blocker ....</h2>";
+            LoadedMSG = "History Blocker Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_historyBlocker.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_updatesdisable() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading Disable Updates ....</h2>";
+            LoadedMSG = "Disable Updates Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_updatesDisable.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_updatesenable() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading Enable Updates ....</h2>";
+            LoadedMSG = "Enable Updates Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_updatesEnable.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_dbBackup() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading DB Backup ....</h2>";
+            LoadedMSG = "DB Backup Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_dbBackup.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_dbRestore() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading DB Restore ....</h2>";
+            LoadedMSG = "DB Restore Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_dbRestore.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_eapkey() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading EAP Dumper ....</h2>";
+            LoadedMSG = "EAP Dumper Loaded ✔";
+            var script = document.createElement('script');
+            script.src = "pl_eapkey.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        function load_fanthresh() {
+            msgs.innerHTML = "<h2 style='font-size:25px;text-align:center;'>Loading PS4 Fan Threshold ....</h2>";
+            LoadedMSG = "PS4 Fan Threshold Loaded ✔";
+            fanTemp = tempC.value; //alert(fanTemp);
+            var script = document.createElement('script');
+            script.src = "pl_fanthresh.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement('script');
+            script.src = "exp_loader.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+    </script>
+</body>
+
+</html>
